@@ -1,0 +1,8 @@
+from typing import TypeVar
+
+T = TypeVar("T")
+
+def my_func(a: type[T]) -> T:  # type: ignore
+    ...
+
+my_func(str | int)
